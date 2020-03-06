@@ -257,7 +257,7 @@ be idle when started.</p>
   <li>
     <p>Run the command below to initialize your Fluo application. Change <code class="highlighter-rouge">myapp</code> to your application name:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> fluo init myapp /path/to/myapp/fluo-app.properties
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> fluo init -a myapp -p /path/to/myapp/fluo-app.properties
 </code></pre></div>    </div>
 
     <p>A Fluo application only needs to be initialized once. After initialization, the Fluo application
@@ -267,7 +267,7 @@ name is used to start/stop the application and scan the Fluo table.</p>
     <p>Run <code class="highlighter-rouge">fluo list</code> which connects to Fluo and lists applications to verify initialization.</p>
   </li>
   <li>
-    <p>Run <code class="highlighter-rouge">fluo config myapp</code> to see what configuration is stored in ZooKeeper.</p>
+    <p>Run <code class="highlighter-rouge">fluo config -a myapp</code> to see what configuration is stored in ZooKeeper.</p>
   </li>
 </ol>
 

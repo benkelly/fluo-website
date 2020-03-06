@@ -216,9 +216,9 @@ can be manually started by users on a single node or distributed across a cluste
 are typically run with one oracle process and multiple worker processes. The commands below will start
 a Fluo oracle and two workers on your local machine:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> fluo oracle myapp &amp;&gt; oracle.log &amp;
- fluo worker myapp &amp;&gt; worker1.log &amp;
- fluo worker myapp &amp;&gt; worker2.log &amp;
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> fluo oracle -a myapp &amp;&gt; oracle.log &amp;
+ fluo worker -a myapp &amp;&gt; worker1.log &amp;
+ fluo worker -a myapp &amp;&gt; worker2.log &amp;
 </code></pre></div>    </div>
 
     <p>The commands will retrieve your application configuration and observer jars (using your
